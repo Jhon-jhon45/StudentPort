@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume | Student Portfolio</title>
+    <style>
+        :root {
+            --bg: #050505;
+            --panel: #101010;
+            --panel-alt: #171717;
+            --primary: #d90429;
+            --primary-dark: #7a0016;
+            --text: #f5f5f5;
+            --muted: #d1d5db;
+            --line: rgba(217, 4, 41, 0.45);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .resume-page {
+            max-width: 980px;
+            margin: 40px auto;
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+            overflow: hidden;
+        }
+
+        .resume-header {
+            background: linear-gradient(135deg, #0d0d0d, var(--primary));
+            padding: 36px 42px;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .resume-header h1 {
+            margin: 0 0 8px;
+            font-size: clamp(2rem, 4vw, 3rem);
+        }
+
+        .resume-header p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 1.1rem;
+        }
+
+        .resume-body {
+            padding: 30px 42px 42px;
+        }
+
+        .two-col {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr;
+            gap: 30px;
+        }
+
+        .section {
+            margin-bottom: 26px;
+        }
+
+        .section h2 {
+            margin: 0 0 12px;
+            color: var(--primary);
+            font-size: 1.2rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        .section p,
+        .section li {
+            color: var(--muted);
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 18px;
+        }
+
+        .info-card {
+            background: var(--panel-alt);
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 18px;
+            margin-bottom: 18px;
+        }
+
+        .info-card h3 {
+            margin: 0 0 10px;
+            color: var(--text);
+        }
+
+        .tag {
+            display: inline-block;
+            margin: 4px 6px 0 0;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: rgba(217, 4, 41, 0.12);
+            border: 1px solid var(--line);
+            color: var(--text);
+            font-size: 0.9rem;
+        }
+
+        .btn-row {
+            margin-top: 20px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            text-decoration: none;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 0.85rem 1.4rem;
+            border-radius: 999px;
+            font-weight: 700;
+            border: none;
+        }
+
+        @media (max-width: 768px) {
+            .resume-page {
+                margin: 20px;
+            }
+
+            .resume-header,
+            .resume-body {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .two-col {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-page">
+        <header class="resume-header">
+            <h1>Student Developer</h1>
+            <p>Web Designer • Frontend Developer • Problem Solver</p>
+        </header>
+
+        <main class="resume-body">
+            <div class="two-col">
+                <div>
+                    <section class="section">
+                        <h2>Profile</h2>
+                        <p>Passionate student developer focused on building responsive, creative, and user-friendly web experiences. I enjoy turning ideas into functional interfaces through clean code, modern design, and continuous learning.</p>
+                    </section>
+
+                    <section class="section">
+                        <h2>Experience</h2>
+                        <ul>
+                            <li>Created responsive websites and interactive design concepts for academic and personal projects.</li>
+                            <li>Collaborated on frontend improvements, layout design, and usability enhancements.</li>
+                            <li>Built projects using HTML, CSS, JavaScript, and modern UI principles.</li>
+                        </ul>
+                    </section>
+
+                    <section class="section">
+                        <h2>Education</h2>
+                        <p>Bachelor of science/Information Technology</p>
+                        <p>Focused on web development, design, and digital communication.</p>
+                    </section>
+                </div>
+
+                <aside>
+                    <div class="info-card">
+                        <h3>Contact</h3>
+                        <p>Email: student@example.com</p>
+                        <p>Phone: +63 912 345 6789</p>
+                        <p>Location: Boronggan City</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Skills</h3>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Responsive Design</span>
+                        <span class="tag">GitHub</span>
+                        <span class="tag">UI/UX</span>
+                    </div>
+                </aside>
+            </div>
+
+            <div class="btn-row">
+                <a class="back-btn" href="index.html">Back to Portfolio</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
